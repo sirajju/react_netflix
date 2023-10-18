@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+}
+.logo {
+    width:80px;
+}
+.navbar{
+    display: flex;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+ul{
+    display: flex;
+    list-style: none;
+    font-weight: 500;
+    gap: 15px;
+}
+.avatar {
+    width:30px;
+    margin: 10px;
+}
+.navbarDark {
+    background: black;
+}
+.right{
+    text-align: end;
+    width: 50%;
+}
+.left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    padding:10px;
+}

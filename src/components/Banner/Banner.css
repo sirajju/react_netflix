@@ -1,0 +1,67 @@
+body {
+    color: white;
+    overflow-y: scroll;
+    background: black;
+}
+.bannerContainer {
+    /* background: url('https://wallpaperaccess.com/full/2703652.png'); */
+    color: white;
+    height: 500px;
+    padding: 100px;
+    box-shadow: 120px 150px 400px 1px black inset;
+    background-size: cover;
+    background-position-x: center;
+    /* background-position-y: 80px; */
+    background-repeat: no-repeat;
+}
+
+.description {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: normal;
+    width: 400px;
+}
+.divBtn {
+    margin-top: 20px;
+}
+button {
+    width: 120px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.btnPlay {
+    color:black
+}
+.btnMore {
+    background: rgba(119, 118, 118, 0.6);
+    margin-left: 10px;
+}
+.bottom{
+    padding:30px;
+    background:linear-gradient(180deg,transparent,rgba(37,37,37,.61),#111);
+}
+.ad_text {
+    font-weight: 600;
+}
+.movie_img {
+    width:250px;
+    margin: 20px 20px 20px 0px;
+    filter: brightness(0.6);
+    transition: all .6s;
+}
+.movie_img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+.movies{
+    
+    overflow-x: scroll;
+    display: flex;
+    justify-content: space-between;
+}
+::-webkit-scrollbar{
+    display: none;
+}
