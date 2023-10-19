@@ -1,0 +1,20 @@
+.NotFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25%;
+}
+.backBtn {
+    color:white;
+    background: black;
+    border:2px solid red;
+}
+.backBtn:hover {
+    color:white;
+    background: red;
+    border:2px solid red;
+}
+li {
+    cursor: pointer;
+}
