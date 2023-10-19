@@ -35,7 +35,7 @@ function App() {
         <RowPosts movies={movieList} text='Popular on Netflix' image_url={image_url} />
         <RowPosts movies={horrorList} text='Horror movies' image_url={image_url} />
       </div>
-      <BigVideo />
+      <BigVideo id={'Po3jStA673E'} />
       <div className='bottom' style={{ }} >
         <RowPosts movies={actionList} text='Action movies' image_url={image_url} />
         <RowPosts movies={movieList} isBig='true' text='Netflix originals' image_url={image_url} />

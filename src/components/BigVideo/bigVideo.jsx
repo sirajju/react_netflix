@@ -12,9 +12,9 @@ export default function (props) {
     return (
         <div className="player">
 
-            <YouTube opts={opts} videoId={props.id ? props.id : 'Po3jStA673E'} iframeClassName='ytVideo'  />
+            <YouTube opts={opts} videoId={props.id} iframeClassName='ytVideo'  />
 
-            <iframe className="ytVideo" autoplay='false'></iframe>
+            <iframe title={props.id} className="ytVideo" autoplay='false'></iframe>
 
         </div>
     )
