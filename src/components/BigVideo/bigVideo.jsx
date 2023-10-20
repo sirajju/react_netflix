@@ -6,7 +6,7 @@ export default function (props) {
         height: '500',
         width: '1200',
         playerVars: {
-            autoplay: false,
+            autoPlay: false,
         }
     };
     return (

@@ -23,6 +23,10 @@ ul{
 }
 .navbarDark {
     background: black;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 .right{
     text-align: end;

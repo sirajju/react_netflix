@@ -1,22 +1,19 @@
-import { useEffect } from 'react'
+import { useEffect,useState } from 'react'
 import './navbar.css'
 import { Routes, Route, useNavigate,Outlet } from 'react-router-dom'
 
 export default function () {
     const history = useNavigate()
-
+    const [darkNavbar,setDarkNavbar] = useState(false)
+    useEffect(()=>{
+        window.addEventListener('scroll',(e)=>{
+            window.scrollY > 30 ? setDarkNavbar(true) : setDarkNavbar(false) 
+        })
+    },[])
     return (
-        <div id='navbar' className="navbar">
+        <div  className={darkNavbar?"navbarDark":"navbar"}>
             <script>
-                {/* {
-                     window.addEventListener('scroll',()=>{
-                        if(window.scrollY > 30){
-                            document.querySelector('#navbar').classList.add('navbarDark') 
-                        }else{
-                            document.querySelector('#navbar').classList.remove('navbarDark')
-                        }
-                    })
-                } */}
+              
             </script>
             <div className="left">
                 <img className="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png" alt="" />
