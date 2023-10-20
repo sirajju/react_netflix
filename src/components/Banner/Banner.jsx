@@ -13,15 +13,7 @@ export default function () {
         setTimeout(()=>{
             setLoader(false)
         },2500)
-        window.addEventListener('scroll', () => {
-           
-            if (window.scrollY < 30) {
-                document.querySelector('.navbar').classList.remove('navbarDark')
-            }
-            else {
-                document.querySelector('.navbar').classList.add('navbarDark')
-            }
-        })
+       
     }, [])
     return (
         <div>

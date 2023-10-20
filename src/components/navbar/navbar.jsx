@@ -1,10 +1,23 @@
+import { useEffect } from 'react'
 import './navbar.css'
 import { Routes, Route, useNavigate,Outlet } from 'react-router-dom'
 
 export default function () {
     const history = useNavigate()
+
     return (
-        <div className="navbar">
+        <div id='navbar' className="navbar">
+            <script>
+                {/* {
+                     window.addEventListener('scroll',()=>{
+                        if(window.scrollY > 30){
+                            document.querySelector('#navbar').classList.add('navbarDark') 
+                        }else{
+                            document.querySelector('#navbar').classList.remove('navbarDark')
+                        }
+                    })
+                } */}
+            </script>
             <div className="left">
                 <img className="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png" alt="" />
                 <ul>
